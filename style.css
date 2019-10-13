@@ -1,0 +1,41 @@
+html {
+    box-sizing: border-box;
+}
+
+html * {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.box {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    
+    height: 375px;
+}
+
+.box__inner-background img {
+    width: 100%;
+}
+
+.box__inner-slide {
+    position: absolute;
+    background-color: rgba(229, 152, 102, .7);
+
+    top: 100%; /* put the inner div below the image */
+
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 400ms top;
+}
+
+/* hover styling */
+.box:hover .box__inner-slide {
+    top: 0; /* initial top position  */
+
+}
