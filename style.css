@@ -8,18 +8,27 @@ html * {
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+}
+
+main {
+    height: 100vh;
 }
 
 .box {
     position: relative;
     display: inline-block;
     overflow: hidden;
-    
-    height: 375px;
+    width: 100%;
+    max-width: 500px;
 }
 
 .box__inner-background img {
     width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
 }
 
 .box__inner-slide {
@@ -39,3 +48,4 @@ body {
     top: 0; /* initial top position  */
 
 }
+
